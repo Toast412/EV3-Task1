@@ -8,14 +8,13 @@ from pybricks.tools import wait
 
 # Initialize the EV3 Brick.
 ev3 = EV3Brick()
-
+8
 # Initialize the motors.
-left_motor = Motor(Port.A)
-right_motor = Motor(Port.B)
+left_motor = Motor(Port.B)
+right_motor = Motor(Port.C)
 
 #Initialise the sensors.
-light_sensor = ColorSensor(Port.S1)
-
+light_sensor = ColorSensor(Port.S3)
 
 # Initialize the drive base.
 robot = DriveBase(left_motor, right_motor, wheel_diameter=56, axle_track=152)
