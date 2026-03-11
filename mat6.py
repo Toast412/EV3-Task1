@@ -5,7 +5,7 @@ from pybricks.ev3devices import Motor, ColorSensor, UltrasonicSensor
 from pybricks.parameters import Port
 from pybricks.robotics import DriveBase
 from pybricks.tools import wait
-import linefollow2.py
+import linefollow2.py as linefollow
 
 # ---------- STANDARD SETUP CODE ---------- #
 
@@ -41,4 +41,4 @@ def findline():
             break
     
     while linefound > 1:
-        
+        linefollow.main()
