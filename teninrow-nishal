@@ -30,7 +30,7 @@ while True:
     r, g, b = light_sensor.rgb()
     L = (r + g +b)/3
     if color == Color.GREEN:
-        #Turning (VIA GAMBLING YAYAYAYAY)
+        #Turning
         error = -L - Line_Follow
         turn_rate = (error * EM)
 
